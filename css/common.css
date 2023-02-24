@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400&display=swap");
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: var(--size-01);
+  line-height: 125%;
+}
+h3 {
+  font-size: var(--size-03);
+}
+h4 {
+  font-size: var(--size-05);
+}
+p {
+  font-family: "Jost", sans-serif;
+}
+
+/* color */
+:root {
+  --primary-color1: #cda274;
+  --primary-color2: #292f36;
+  --primary-color3: #f4f0ec;
+}
+
+/* font */
+:root {
+  --size-01: 50px;
+  --size-02: 35px;
+  --size-03: 25px;
+  --size-04: 22px;
+  --size-05: 20px;
+  --size-06: 18px;
+}
+
+/* button */
+button {
+  height: 75px;
+  line-height: 75px;
+  border-radius: 18px;
+  border: transparent;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+}
+button.default {
+  width: 250px;
+  background-color: var(--primary-color2);
+  color: #fff;
+}
+button.default i {
+  color: var(--primary-color1);
+  margin-left: 30px;
+}
+
+button.large {
+  width: 280px;
+  background-color: var(--primary-color2);
+}
+
+button.color {
+  width: 224px;
+  background: var(--primary-color1);
+}
+button.color i {
+  color: var(--primary-color2);
+}
+.shortcut {
+  background: var(--primary-color3);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  text-align: center;
+}
+.container {
+  width: 1200px;
+}
+/* header */
+header {
+  height: 140px;
+}
+.nav {
+  gap: 50px;
+}
+.nav a {
+  color: var(--primary-color2);
+}
+
+/* banner */
+
+.banner {
+  background: url(../img/about/banner_about.jpg) no-repeat;
+  background-size: cover;
+  height: 356px;
+  position: relative;
+}
+.banner .title {
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  border-radius: 37px 37px 0 0;
+  width: 30%;
+  height: 178px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  text-align: center;
+  padding: 200px 0;
+}
+
+/* footer */
+footer img {
+  margin-bottom: 42px;
+}
+footer .slogan {
+  font-size: var(--size-02);
+  line-height: 150%;
+}
+footer .subscript form {
+  position: relative;
+}
+footer .subscript p {
+  font-size: var(--size-06);
+}
+footer .subscript button {
+  background: none;
+  color: var(--primary-color2);
+  box-shadow: none;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  height: 0;
+  line-height: 0;
+}
+footer input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 42px;
+}
+footer .follow {
+  text-align: right;
+}
+footer .follow p {
+  margin-bottom: 12px;
+}
+footer .sns {
+  gap: 25px;
+}
+footer .sns > div {
+  background: var(--primary-color3);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-size: var(--size-06);
+}
